@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1021466059657",
+    "firebase_url": "https://task-3-opsc7311.firebaseio.com",
+    "project_id": "task-3-opsc7311",
+    "storage_bucket": "task-3-opsc7311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021466059657:android:e4f6d67c302b2eb9567758",
+        "android_client_info": {
+          "package_name": "com.mubeen.task3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021466059657-gq8u7n65eo92gt9qjpe3kuf2junfeur0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcmQ1cAzAjIX5ynnZCwYJ8EQUmxkok_KU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021466059657-gq8u7n65eo92gt9qjpe3kuf2junfeur0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

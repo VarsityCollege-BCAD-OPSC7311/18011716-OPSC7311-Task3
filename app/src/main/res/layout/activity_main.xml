@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenone_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="18dp"
+                android:orientation="vertical">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="14dp"
+                    app:cardElevation="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card_bg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginRight="22dp"
+                            android:layout_marginLeft="26dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="40sp"
+                                    android:textColor="#ffffff"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Dashboard"
+                                    android:layout_marginBottom="10dp"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="25dp"
+                                        android:textSize="14sp"
+                                        android:textColor="#c4c3ff"
+                                        android:letterSpacing="0.03"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:lineSpacingExtra="8sp"
+                                        android:text="Welcome" />
+
+                                    <TextView
+                                        android:id="@+id/userFullNameTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="20dp"
+                                        android:textColor="#ffffff"
+                                        android:letterSpacing="0.03"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:lineSpacingExtra="4sp"
+                                        android:text="Name Here"
+                                        />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/settingsCV"
+                        android:layout_width="200dp"
+                        android:layout_height="50dp"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="14dp"
+                        android:layout_gravity="center"
+                        app:cardBackgroundColor="@color/orange_400"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/settingsLL"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/settingsIV"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/settings3" />
+
+                            <TextView
+                                android:id="@+id/settingsTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:textColor="#ffff"
+                                android:lineSpacingExtra="6sp"
+                                android:text="Settings"
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/goalsCV"
+                        android:layout_width="50dp"
+                        android:layout_height="150dp"
+                        app:cardElevation="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginEnd="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/goalsLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/goalsIV"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/target" />
+
+                            <TextView
+                                android:id="@+id/goalsTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:textColor="#2b2b2b"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingExtra="6sp"
+                                android:text="Goals"
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/logWeightCV"
+                        android:layout_width="50dp"
+                        android:layout_height="150dp"
+                        app:cardElevation="0dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="14dp"
+                        app:cardBackgroundColor="@color/white"
+                       >
+
+                        <LinearLayout
+                            android:id="@+id/logWeightLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/logWeightIV"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/logweight"/>
+
+                            <TextView
+                                android:id="@+id/logWeightTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:textColor="#2b2b2b"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingExtra="6sp"
+                                android:text="Log Weight"
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/profileCV"
+                        android:layout_width="50dp"
+                        android:layout_height="150dp"
+                        app:cardElevation="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="14dp"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginEnd="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/profileLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/profileIV"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/profile"/>
+
+                            <TextView
+                                android:id="@+id/profileTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:textColor="#2b2b2b"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingExtra="6sp"
+                                android:text="Profile"
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/trackMealsCV"
+                        android:layout_width="50dp"
+                        android:layout_height="150dp"
+                        app:cardElevation="0dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="14dp"
+                        app:cardBackgroundColor="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/trackMealsLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <ImageView
+                                android:id="@+id/trackMealsIV"
+                                android:layout_width="80dp"
+                                android:layout_height="84dp"
+                                android:src="@drawable/meals" />
+
+                            <TextView
+                                android:id="@+id/trackMealsTV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:textColor="#2b2b2b"
+                                android:layout_marginTop="5dp"
+                                android:lineSpacingExtra="6sp"
+                                android:text="Track Meals"
+                                />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:lineSpacingExtra="2sp"
+                        android:text="Logged in as"
+                        android:textColor="#4e4e4e"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/loggedInAsDash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:lineSpacingExtra="2sp"
+                        android:text="user"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/logOutLLDash"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/logOutTVDash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#232323"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="4sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Log Out"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
